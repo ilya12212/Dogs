@@ -1,0 +1,22 @@
+package com.company;
+
+public class Shepherd extends Dog{
+    private String higth;
+    public Shepherd(String name, int age, double width,String higth) {
+        super(name, age, width);
+        this.higth = higth;
+    }
+
+    public String getHigth() {
+        return higth;
+    }
+
+    public void setHigth(String higth) {
+        this.higth = higth;
+    }
+    @Override
+    public String toString(){
+        String message =("\nName = " + getName() + "\nAge = " + getYear() + "\nWidth = " + getWidth() + "\nHegth = " + getHigth());
+        return message;
+    }
+}
