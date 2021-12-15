@@ -1,0 +1,25 @@
+package com.company;
+
+public class Bulldog extends Dog{
+    private  String type;
+
+
+
+    public Bulldog(String name, int age, double width,String type) {
+        super(name, age, width);
+        this.type = type;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+    @Override
+    public String toString(){
+        String message  = ("\nName = " + getName() + "\nAge = " + getYear() + "\nWidth = " + getWidth() + "\nType = " + getType());
+        return  message;
+    }
+}
